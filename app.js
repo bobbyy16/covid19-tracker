@@ -14,9 +14,9 @@ $(document).ready(function () {
 
         $.each(data.statewise, function (id, object) {
             state.push(object.state)
-            confirmed.push(object, confirmed)
-            recovered.push(object, recovered)
-            deaths.push(object, deaths)
+            confirmed.push(object.confirmed)
+            recovered.push(object.recovered)
+            deaths.push(object.deaths)
 
         })
 
